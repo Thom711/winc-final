@@ -1,14 +1,18 @@
-from flask import Flask
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Woooooo'
+    return render_template('index.html', title="Home")
 
-@app.route('/cow')
-def cow():
-    return 'MOoooOo!'
+@app.route('/home')
+def home():
+    return redirect('/')
+
+@app.route('/about')
+def about():
+    return render_template('about.html', title="About")    
 
 
-# Add some simple pages, add testing. Make the deploy script fail if testing is not passed
+# Add some simple pages, add simple testing

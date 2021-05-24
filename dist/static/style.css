@@ -1,0 +1,54 @@
+header {
+    background-color: black;
+    color: white;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
