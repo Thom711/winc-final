@@ -1,11 +1,12 @@
-name: Print Hello
+name: Checkout Repository
 
-on: workflow_dispatch
+on: push
 jobs:
-  print-hello:
-    # Specify on which operating system we want this workflow to run
+  checkout-repository:
     runs-on: ubuntu-20.04
-    # The steps that will be excuted
     steps:
-    - name: Print
-      run: echo "Hello, world!"
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+#Now lives in $GITHUB_REPOSITORY
+#https://github.com/marketplace/actions/checkout
