@@ -34,4 +34,4 @@ jobs:
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/winc-final/
       # Restart the application
       - name: Restart Application
-        run: sudo systemctl restart winc-final
+        run: /bin/systemctl restart winc-final
