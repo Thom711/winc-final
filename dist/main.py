@@ -9,3 +9,6 @@ def index():
 @app.route('/cow')
 def cow():
     return 'MOoooOo!'
+
+
+# Add some simple pages, add testing. Make the deploy script fail if testing is not passed
