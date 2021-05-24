@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '16! change'
+    return 'Woooooo'
 
 @app.route('/cow')
 def cow():
